@@ -29,7 +29,7 @@ module.exports = {
             // presets: ["@babel/preset-env"],
             // 2.传入参数, 优先级高于上面的配置. 不建议这样使用. 避免css, js 导致转换时不统一
             presets: [["@babel/preset-env", { target: ["chrome 88"] }]],
-
+            // 外部
             // plugins: [
             //   "@babel/plugin-transform-arrow-functions",
             //   "@babel/plugin-transform-block-scoping",

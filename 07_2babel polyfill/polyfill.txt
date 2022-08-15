@@ -1,0 +1,12 @@
+https://babeljs.io/docs/en/babel-polyfill
+文字翻译:
+ 补丁, 填充物
+
+例如解决Pormise浏览器兼容, 这是ES6的(这是根据.browserslistrc文件配置生成相关兼容)
+
+生产环境中使用, 安装时使用-S, 但是就算是使用-D, webpack也会打包到生产文件中
+
+*** babel7.4.0之前, 使用@babel/polyfill这个包. npm会爆出警告, 过期
+
+*** 使用:
+    npm i core-js regenerator-runtime --save
