@@ -1,0 +1,18 @@
+-- 安装webpack时, 已经安装过, 可直接使用
+-- browserslist只是其它工具依赖, 用来查询
+-- 测试 npx browserslist ">1%, last 2 version, not dead"
+-- 直接执行 npx browserslist 会查询当前目录中.browserslistrc文件中设置
+-- 逗号或or隔开并集, 或者.
+-- and not 且,取反
+-- 以下选择一个即可
+-- 在package中定义browserslist, 可以覆盖默认的browserslist
+-- 或者定义文件.browserslistrc, 可以覆盖默认的browserslist
+
+
+https://caniuse.com 底部 Browser usage table
+https://caniuse.com/usage-table
+
+使用 BrowserList
+browserlist用于在不同前端工具之间共用目标浏览器和node版本的配置工具。
+
+博客: https://www.jianshu.com/p/91157aa64244

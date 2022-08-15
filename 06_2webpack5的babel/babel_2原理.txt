@@ -1,0 +1,7 @@
+视频=> 1:50:00 开始
+代码解析=>AST处理=>转换字节码
+词法分析
+
+lisp转c语言编译器
+https://github.com/jamiebuilds/the-super-tiny-compiler
+https://github.com/YongzeYao/the-super-tiny-compiler-CN

@@ -1,0 +1,10 @@
+html,
+body {
+    height    : 100%;
+    background: #33333333;
+    margin    : 0;
+}
+body {
+    width: 50%;
+    margin: 0 auto;
+}

@@ -1,0 +1,24 @@
+babel: 微内核架构
+官网: https://babeljs.io/
+babel: 是一个工具链, 用于将ES6代码转换为ES5代码, 是一个独立的工具, 不依赖于webpack
+==安装==
+npm i @babel-core -D
+
+
+==命令行, 使用多个插件用逗号分隔==
+npm i @babel/cli -D
+-- npx babel src --out-dir dist
+
+***转换箭头函数插件
+npm i @babel/plugin-transform-arrow-functions -D
+-- npx babel src --out-dir dist --plugins=@babel/plugin-transform-arrow-functions
+
+***const转为var
+?? 自动生成的==>npm i @babel/plugin-transform-constant-evaluate -D
+npm i @babel/plugin-transform-block-scoping -D
+-- npx babel src --out-dir dist --plugins=@babel/plugin-transform-block-scoping
+
+因为转换需要每次都写很多插件, 我们可以使用预设
+npm i @babel/preset-env -D
+-- npx babel src --out-dir dist --presets=@babel/preset-env
+-- [!!!失败!!!]22_08_10 当前测试没有转为es5

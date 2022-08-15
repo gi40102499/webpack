@@ -1,0 +1,14 @@
+47分钟开始
+多种babel配置方式
+
+因为各个第三方库的多包管理
+
+.babelrc.json : 早起使用较多的配置方式. 但是对于 夺宝管理(Monorepos)项目比较麻烦
+*** 推荐: babel.config.json : 可以直接作用与Monorepos项目
+```
+module.export = {
+  "presets": [
+    "@babel/preset-env",
+  ]
+}
+```
