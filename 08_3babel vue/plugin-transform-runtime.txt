@@ -1,0 +1,5 @@
+这个了解
+
+避免polyfill全局污染
+
+但是不能在babel.config.js同时使用polyfill和plugin-transform-runtime

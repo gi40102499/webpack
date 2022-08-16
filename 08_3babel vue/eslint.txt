@@ -1,0 +1,26 @@
+00:53:00 开始eslint
+https://eslint.org/
+静态代码分析工具
+统一风格, 统一, 可读性, 可维护性 
+
+可全局或局部
+
+npm i eslint -D
+
+手动检查文件是否符合规范
+npx eslint -init 创建规范文件
+npm eslint [文件路径]
+
+***错误配置
+    将报错的规章名, 填写到.eslintc.js rules对象中
+    报错后面的填写 : 数字或者字符串
+        0: 'off' 关闭
+        1: 'warn' 警告
+        2: 'error' 错误(默认)
+
+***eslint-loader
+    开发中校验代码规范
+
+***vscode插件 prettier 配合更换的格式化. 可以在网站中手动配置(https://prettier.io/playground/)
+    https://prettier.io/
+    

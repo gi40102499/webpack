@@ -1,0 +1,4 @@
+vue-loader
+
+编译template
+vue-template-compiler
