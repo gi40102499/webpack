@@ -1,0 +1,22 @@
+全局安装 typescript
+tsc -init // 初始化项目, 创建 tsconfig.json
+webpack中安装ts-loader
+
+
+
+*** babel中编译ts, 直接使用babel-loader, 不需要ts-loader.
+    设置预设: npm install --save-dev @babel/preset-typescript https://babeljs.io/docs/en/babel-preset-typescript
+
+*** 最佳实践
+    ts-loader 和 babel-loader 选择
+    -- babel-loader 不作类型校验, 只作编译
+    -- ts-loader 作类型校验
+
+    构建之前tsc检查, 成功那么babel构建
+    tsc --noEmit
+
+    package.js中写
+    "build":npm run type-check & webpack
+    "type-check":tsc --noEmit
+    // 监听
+    "type-check-wacth": "tsc --noEmit --watch",
